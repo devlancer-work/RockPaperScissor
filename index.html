@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper & Scissor</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./resources/css/style.css">
+
+</head>
+
+<body>
+    <main id="main">
+        <div class="container">
+
+            <!-- Modal -->
+            <div id="modal" class="flex hidden">
+                <div class="modal">
+                    <div class="modal-container flex-column">
+                        <div class="end-text flex">
+                            <h2 id="result">- You Won -</h2>
+                        </div>
+                        <div class="chose-container flex">
+                            <div class="chose-text">
+                                <p>You Chose </p>
+                            </div>
+                            <div class="chose-block flex">
+                                <p id="user-choice-modal">Scissor</p>
+                            </div>
+                        </div>
+                        <div class="chose-container flex">
+                            <div class="chose-text">
+                                <p>Computer Chose </p>
+                            </div>
+                            <div class="chose-block flex">
+                                <p id="comp-choice-modal">Paper</p>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="restart-btn">Play Again</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div id="header">
+                <div class="header-content flex">
+                    <h2>Rock</h2>
+                    <h2>Paper</h2>
+                    <h2>Scissor</h2>
+                </div>
+            </div>
+
+            <!-- Upper Body -->
+            <div id="upper-body">
+                <div class="upper-body flex-column">
+                    <div class="text-content flex">
+                        <h2>Your Move...</h2>
+                    </div>
+                    <div class="images flex">
+                        <div class="img" data-name="rock" data-defeats="scissor">
+                            <img src="./resources/img/rock.png" alt="Rock Image">
+                        </div>
+                        <div class="img" data-name="paper" data-defeats="rock">
+                            <img src="./resources/img/paper.png" alt="Paper Image">
+                        </div>
+                        <div class="img" data-name="scissor" data-defeats="paper">
+                            <img src="./resources/img/scissor.png" alt="Scissor Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lower Body -->
+            <div id="lower-body">
+                <div class="lower-body">
+                    <div class="blocks-container flex">
+                        <div class="block flex">
+                            <p>User</p>
+                        </div>
+                        <div class="block flex">
+                            <p>Computer</p>
+                        </div>
+                    </div>
+                    <div class="blocks-container flex">
+                        <div class="img-block flex">
+                            <div class="ans-img ansUser"></div>
+                        </div>
+                        <div class="img-block flex">
+                            <div class="ans-img ansComputer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Js -->
+    <script src="./resources/js/script.js"></script>
+</body>
+
+</html>
